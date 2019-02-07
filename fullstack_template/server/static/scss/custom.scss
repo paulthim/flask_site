@@ -1,0 +1,275 @@
+$font-size-base:  1.4rem;
+$baseurl: "{{ site.baseurl }}";
+$nav-tabs-border-radius: 0px;
+$nav-tabs-border-width: 0px;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/highlight.js/styles/default";
+
+a:not([href]):not([tabindex]) {
+  color: #337ab7;
+}
+
+a:not([href]):not([tabindex]):not(.active):hover {
+  color: #337ab7;
+  background-color: #dee2e6;
+}
+
+html, body, body>#app, #app>div {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 400px;
+}
+
+#menu {
+  background-color: rgba(10, 10, 10, .8);
+  width: auto;
+  font-size: 14px;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  border-bottom: 0;
+  text-transform: uppercase;
+}
+
+.nav-tabs > li > a {
+  border-radius: 0;
+  padding: 10px 25px;
+}
+
+.nav-stacked {
+  overflow-y: scroll;
+}
+
+.nav-stacked > li > a {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 15px;
+}
+
+.port-nav-title {
+  background-color: #f4f4f4;
+  color: #444;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  text-align:left;
+  border: none;
+
+}
+
+.port-nav-label {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px;
+  position: relative;
+}
+
+.accordion__body {
+  padding: 0px !important;
+}
+
+.port-nav-label {
+  position: relative;
+  font-weight: 600;
+}
+
+.port-nav-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.port-nav-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.port-nav-item:hover {
+  background-color: #dee2e6;
+}
+
+.port-nav-item:first-child {
+  border-radius: 0px;
+}
+
+.port-nav-item:last-child {
+  margin-bottom: 0;
+  border-radius: 0px;
+}
+
+.content {
+  justify-content: center;
+  margin-bottom: 10%;
+  max-width: 100%;
+  padding: 1em;
+}
+
+.content>.content-body {
+  max-width: 800px;
+  min-width: 50%;
+}
+
+.header-mobile {
+  background-image: url('dist/images/inisoirr_portrait.jpg');
+}
+
+.header-desktop {
+  background-image: url('dist/images/inisoirr_landscape.jpg');
+}
+
+.header-full {
+  height: 400px;
+  background-position: left 0px top 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-min {
+  height: 30%;
+  background-position: left 0px top 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.media {
+  padding: 1em;
+  color: rgb(51, 51, 51);
+}
+
+.media-heading {
+  display: inline;
+  justify-content: left;
+  font-size: calc(20px + 2vmin);
+}
+
+.media-left {
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.burger {
+  transform: rotate(0deg);
+  transition: transform 0.3s linear;
+}
+
+.burger.rotate {
+  transform: rotate(-90deg);
+  transition: transform 0.3s linear;
+}
+
+.tooltip {
+  line-height: 1;
+  font-size: 1em;
+}
+
+.menu-button {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.footer {
+  height: 5%;
+}
+
+.footer-link {
+  color: #545b62;
+}
+
+.port-form-container {
+  padding: ($spacer * .5) ($spacer * 3) !important
+}
+
+.input-group > .input-group-prepend > .btn, .input-group > .input-group-append > .btn {
+  border-color: #ced4da;
+  font-size: 1em;
+}
+
+.form-control {
+  width: 100%;
+  resize: none;
+}
+
+#resultTextBox {
+  height: calc(2rem + 2px);
+}
+
+pre {
+  margin-bottom: 0;
+}
+
+.panel {
+  border: none;
+  border-radius: 0;
+  box-shadow: 0px 1px 0.1pt 0.1pt slategrey;
+  padding: 1em;
+}
+
+p {
+  text-align: left;
+}
+
+.body-lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.body-p {
+  border-left-color: solid #212529;
+  font-weight: 400 !important;
+  margin-bottom: 1rem;
+  color: #212529;
+  text-align: justify;
+}
+
+.body-link-col {
+  border-bottom: 1px solid #dee2e6 !important;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+
+.body-link {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.body-list-p {
+  color: #212529;
+  margin-bottom: 0;
+}
+
+.col-sm-2 > ul {
+  font-weight: bold;
+  padding-left: 1rem;
+} > li {
+  background-size: 1.6rem 1.6rem
+}

@@ -1,0 +1,13 @@
+# IntelliJ folders
+.idea
+
+# Compiled and Created files
+*.log
+**/__pycache__
+**/dist/*.bundle.js
+**/dist/bundle.js
+**/dist/styles.css
+
+# Misc
+node_modules
+.DS_Store
